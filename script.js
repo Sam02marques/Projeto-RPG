@@ -1,9 +1,3 @@
-// REVISÃO JavaScript
-
-// let la_ele = ["bora_bill","amostradinho","la_nele"]
-
-// console.log(la_ele)
-
 // PROJETINHO RPG 
 
 // Criar uma classe Item que represente os itens do jogo.
@@ -79,7 +73,7 @@ const equip2 = new Inventario();{
     equip.addItem(new Item("escudo de bronze", "escudo impenetrável", "raro", 10));
 }
 
- const equip3 = new Inventario();{
+const equip3 = new Inventario();{
     equip.addItem(new Item("capa de seda", "capa lendária", "normal", 1));
 }
 
@@ -93,25 +87,23 @@ const vara_mistica = new Item("Vara Mística", "Uma vara de bruxo poderosa", "de
 equip.addItem(espada);
 equip.addItem(pocao_de_vida);
 equip.addItem(vara_mistica);
-console.log(equip.listItems());
-console.log(equip.totalWeight())
 
 // MÉTODO PARA REMOVER ITENS DO INVENTARIO
 // equip.removeItem("Poção de vida");
 
 // MÉTODO PARA LISTAR ITENS DO INVENTARIO
-// console.log(equip.listItems());
+console.log(equip.listItems());
 
 
 // MÉTODO PARA MOSTRAR DETALHES DO ITEM ESPECÍFICO
-// console.log(vara_mistica.getDetalhes());
+console.log(vara_mistica.getDetalhes());
 
 
 // MÉTODO PARA BUSCAR ITENS POR TIPO
-// console.log(equip.findItemsByType("demoníaco"));
+console.log(equip.findItemsByType("demoníaco"));
 
-
-
+// MÉTODO PARA SOMAR O PESO DOS ITENS
+console.log(equip.totalWeight());
 
 // exemplo de como usar o método reduce
 // const num = [5,6,7,8,9,10];
